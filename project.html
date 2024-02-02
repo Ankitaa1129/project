@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor</title>
+    <style>
+        body{
+            background-color: rgb(197, 248, 248);
+            padding-top: 70px;
+            padding-bottom: 70px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        h1{
+            text-align: center;
+        }
+        #container{
+            text-align: center;
+            background-color: rgb(242, 151, 151);
+            padding: 50px;
+        }
+        .input{
+            display: inline-block;
+        }
+        .inp{
+            padding: 10px 10px;
+            margin: 10px;
+            font-weight: bold;
+            font-size: large;
+            width: 250px;
+            text-align: center;
+        }
+        label{
+            font-size: 25px;
+            color: black;
+        }
+        textarea{
+            border-radius: 3px;
+        width: 98.8%;
+            border-color: blue;
+            font-size: large;
+        }
+        p{
+            text-align: center;
+            background-color: rgb(223, 242, 148);
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+            padding: 10px;
+            margin: 0px;
+        
+        }
+        .btn
+        {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            cursor: pointer;
+        }
+        #aqua{
+            background-color: rgb(142, 241, 241);
+        }
+        #violet{
+            background-color: rgb(145, 110, 179);
+        }
+        #white{
+            background-color: white;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="heading">Temperature Convertor</h1>
+    <div id="container">
+    <div class="input">
+        <label>celsius</label>
+        <br>
+        <br>
+        <input type="number" value="0" id="cel" class="inp">
+    </div>
+    <div class="input">
+        <label>fahrenheit</label>
+        <br>
+        <br>
+        <input type="number" value="32" id="fah" class="inp">
+    </div>
+    <hr>
+    <br>
+    <hr>
+    <br>
+    
+    <h1>Word counter</h1>
+        <textarea id="textbox" cols="30" rows="10"></textarea>
+        <p>
+           <span id="word"> 0 </span> words and <span id="char"> 0 </span> characters
+        </p>
+    </div>
+    <script src="script.js" ></script>
+       
+      
+
+        
+</body>
+</html>
